@@ -1,0 +1,269 @@
+body{
+    padding: 0px;
+    margin: 0px;
+
+}
+
+.navbar{
+    /* background-color: black; */
+    height: 80px;
+    display: flex;
+    /* justify-content: center; */
+    /* /* align-items: center; */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    overflow:hidden; 
+    background-color: white;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.navbar a{
+    text-decoration: none;
+}
+
+.home,.tour,.logo,.contact,.login,.signup{
+    /* background-color: rgb(192, 42, 42); */
+    /* width: 150px;
+    height: 40px; */
+    font-family: "Abel", sans-serif;
+    /* font-weight: 400; */
+    font-style: normal;
+    display: inline-flex;
+    font-weight: 400;
+    font-size: 20px;
+    margin: 20px;
+    padding: 10px;
+    /* letter-spacing: 2px; */
+
+}
+
+
+
+.login{
+    margin-left: auto;
+}
+
+.logoimg{
+    width: 120px;
+    height: 120px;
+    /* margin-top: -50px; */
+    /* position: relative; */
+    /* bottom: 55px; */
+    /* position: absolute; */
+    /* top: -30px; */
+    /* overflow: hidden; */
+}
+
+
+.navbar *{
+    color: black;
+}
+
+.navbar i{
+    margin-right: 5px;
+}
+
+
+.img{
+    /* background-size: cover; */
+    width: 100%;
+    position: relative;
+    height: 650px
+    /* position: relative; */
+}
+
+i{
+    opacity: 0;
+    position: absolute;
+    transition: opacity 0.3s ease-in, transform 0.3s ease-in, color 0.3s ease-in;
+}
+
+span{
+    transition: transform 0.3s ease-in, color 0.3s ease-in;
+}
+
+div a:hover i{
+    opacity: 100%;
+    transform: translateX(-25px);
+    color: rgb(30, 131, 255);
+}
+
+div a:hover span{
+    transform: scale(0.8);
+    color: grey;
+}
+
+.navbar a#activate{
+    border-bottom: solid red 2px;
+}
+
+
+.background{
+    position: relative;
+}
+.background h1{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    bottom:80%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 50px;
+    font-family: 'Anton', sans-serif;
+    font-weight: 1000;
+    letter-spacing: 10px;
+    color: white;
+}
+
+
+.background h2{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    bottom:79%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    letter-spacing: 10px;
+    font-family: "Abel", sans-serif;
+}
+
+.background a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    background-color: rgba(83, 80, 80, 0.425);
+    padding: 15px;
+    border-radius: 2px;
+    position: absolute;
+    left: 50%;
+    font-family: 'Anton', sans-serif;
+    font-weight: 600;
+    top: 70%;
+    transform: translateX(-50%);
+    transition: box-shadow 0.3s ease-in, color 0.3s ease-in, background-color 0.3s ease-in;
+}
+
+.background a:hover{
+    /* transform:scale(1.01); */
+    box-shadow: 0 4px 10px rgb(243, 118, 154);
+    color: white;
+    background-color: black;
+}
+
+.aboutus{
+    background-color: rgb(234, 234, 234);
+    padding: 20px;
+    /* width: 700px; */
+    border-radius: 5px;
+    height: 300px;
+}
+
+.aboutus .info{
+    width: 700px;
+    background-color: black;
+    padding: 20px;
+}
+.aboutus h1{
+    font-family: 'Anton', sans-serif;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.aboutus p{
+    text-align: center;
+    padding: 20px;
+    line-height: 1.5;
+    font-family: "Abel", sans-serif;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+}
+
+.extra{
+    font-family: "Abel", sans-serif;
+    text-align: center;
+    position: relative;
+    bottom: 300px;
+    left: 700px;
+    font-size: 20px;
+    width: 800px;
+}
+
+.extra h1{
+    color: black;
+}
+
+.extra img{
+    width: 200px;
+}
+
+
+footer{
+    text-align: center;
+    padding: 30px;
+    font-family: "Abel", sans-serif;
+
+}
+
+footer a{
+    text-decoration:underline;
+    color: black;
+    margin-right: 20px;
+}
+
+.tour_background{
+    background-color: black;
+    height: 600px;
+    width: 100%;
+    position: relative;
+}
+
+.bgimg{
+    position: absolute;
+    top: 25%;
+    left: -10%;
+}
+
+@media screen and (max-width:600px){
+    .navbar{
+        height: 50px;
+        display: flex;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        overflow:hidden;
+        background-color: #ffffff;
+    }
+
+    .navbar * {
+        margin: 0px;
+        padding: 2px;
+        font-size: 10px;
+    }
+
+    .logoimg{
+        width: 60px;
+    }
+    .login{
+        margin-left: auto;
+    }
+
+    div a:hover i{
+        opacity: 0;
+    }
+
+    .img{
+        height: 900px;
+        object-fit: cover;
+    }
+
+    .bgimg{
+        width: 100%;
+        object-fit: cover;
+        top: 60%;
+        left: -15%;
+    }
+}
