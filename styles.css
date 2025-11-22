@@ -105,11 +105,12 @@ div a:hover span{
 .background{
     position: relative;
 }
+
 .background h1{
     position: absolute;
     text-align: center;
     width: 100%;
-    bottom:80%;
+    bottom:70%;
     left: 50%;
     transform: translateX(-50%);
     font-size: 50px;
@@ -124,7 +125,7 @@ div a:hover span{
     position: absolute;
     text-align: center;
     width: 100%;
-    bottom:79%;
+    bottom:69%;
     left: 50%;
     transform: translateX(-50%);
     font-size: 20px;
@@ -155,17 +156,23 @@ div a:hover span{
 }
 
 .aboutus{
+    position: relative;
     background-color: rgb(234, 234, 234);
-    padding: 20px;
+    padding: 40px;
     /* width: 700px; */
     border-radius: 5px;
     height: 300px;
+    overflow: hidden;
 }
 
 .aboutus .info{
+    position: absolute;
     width: 50%;
     background-color: black;
     padding: 20px;
+    top: -30px;
+    margin: 60px;
+    margin-left: 20px;
 }
 .aboutus h1{
     font-family: 'Anton', sans-serif;
@@ -182,14 +189,12 @@ div a:hover span{
     color: rgb(255, 255, 255);
 }
 
-.extra{
+.aboutus .extra{
     font-family: "Abel", sans-serif;
+    position: absolute;
+    left: 65%;
+    top: 10%;
     text-align: center;
-    position: relative;
-    bottom: 300px;
-    left: 700px;
-    font-size: 20px;
-    width: 50%;
 }
 
 .extra h1{
@@ -255,6 +260,18 @@ footer a{
         opacity: 0;
     }
 
+    .background h1{
+        word-spacing: 0px;
+        top: 50px;
+        font-size: 20px;
+    }
+
+    .background h2{
+        font-size:10px ;
+        top: 120px;
+        letter-spacing: 2px;
+    }
+
     .img{
         height: 900px;
         object-fit: cover;
@@ -266,5 +283,31 @@ footer a{
         top: 60%;
         left: -15%;
     }
-}
 
+    .aboutus p{
+        margin:0px;
+        text-align: center;
+        margin-right: 25px;
+
+    }
+
+    .aboutus .info{
+        margin: 0px;
+    }
+    .aboutus{
+        margin: 0px;
+        height: 450px;
+        padding: 0px;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .aboutus .info{
+        width: 100%;
+    }
+
+    .extra{
+        visibility: hidden;
+    }
+    
+}
