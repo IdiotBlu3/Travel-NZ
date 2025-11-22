@@ -163,7 +163,7 @@ div a:hover span{
 }
 
 .aboutus .info{
-    width: 700px;
+    width: 50%;
     background-color: black;
     padding: 20px;
 }
@@ -189,7 +189,7 @@ div a:hover span{
     bottom: 300px;
     left: 700px;
     font-size: 20px;
-    width: 800px;
+    width: 50%;
 }
 
 .extra h1{
@@ -267,3 +267,4 @@ footer a{
         left: -15%;
     }
 }
+
